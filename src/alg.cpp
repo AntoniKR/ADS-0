@@ -1,5 +1,11 @@
 // Copyright 2021 NNTU-CS
 
 int gcd(int a, int b) {
-    // поместить сюда текст реализации алгоритма (на С++)
+    int n=1;
+    for (int i=0;i<b;i++)
+    {
+        if (a%i==0 && b%i==0)
+            n=i;
+    }
+    return n;
 }
